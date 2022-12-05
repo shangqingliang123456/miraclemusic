@@ -4,13 +4,13 @@
         <h1>miracle团队</h1>
     </div>
     <div class="shang" style="color:pink">
-        <h1>商清亮:50%(贡献率)</h1>
+        <h1>商清亮:33%(贡献率)</h1>
     </div>
     <div class="shang" style="color:aquamarine">
-        <h1>郭玉玺:35%(贡献率)</h1>
+        <h1>郭玉玺:33%(贡献率)</h1>
     </div>
     <div class="shang" style="color:#FFA500">
-        <h1>杜悦:15%(贡献率)</h1>
+        <h1>杜悦:33%(贡献率)</h1>
     </div>
   </div>
 </template>

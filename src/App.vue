@@ -32,7 +32,6 @@
             {{ state.store.name[state.store.i] }}<br />
             {{ state.store.singer[state.store.i] }}<br />
             <el-scrollbar class="ul">
-              <!-- :style="test" -->
               <div class="contain" ref="contain">
                 <div
                   id="musicListtext"
@@ -42,7 +41,7 @@
                   ]"
                   :key="index"
                   :class="key < current ? 'current' : 'current1'"
-                  :style="index <= state.store.index1 - 4 ? 'display:none' : ''"
+                  :style="test"
                 >
                   {{ item }}
                 </div>
@@ -239,9 +238,11 @@ export default {
       if(this.current!=0){
         for ( let i = 0; i < this.state.store.time[this.state.store.i].length; i++) {
         if (this.current == this.state.store.time[this.state.store.i][i]) {
-          this.state.store.index1=i;
-          console.log(this.state.store.index1)
-        }
+
+            this.state.store.index1=i;
+            console.log(this.state.store.index1)
+          }
+        
       }
       }else{
         this.state.store.index1=0
