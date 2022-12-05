@@ -1,4 +1,5 @@
 <template>
+     <div>
       <div class="administrator show">
         <div :class="afterlogin == '登录成功' ? 'disvisable' : 'loginput'">
         <input
@@ -40,6 +41,7 @@
         </div>
       </el-dialog>
       </div>
+     </div>
 </template>
 <script>
 import { ElMessage } from 'element-plus'
@@ -48,7 +50,7 @@ export default{
         return{
             visible:false,
             loging: false,
-            myurl:"http://localhost:8082/",
+            myurl:"http://39.103.209.93:4001/",     
             username: "",
             password: "",
             afterlogin: sessionStorage.getItem("afterlogin"),
@@ -193,5 +195,15 @@ export default{
 .show {
   animation-name: show;
   animation-duration: 0.4s;
+}
+@media screen and (max-width: 600px){
+  .avatar{
+    position: absolute;
+    top: 300px;
+  }
+  .quit{
+    position: absolute;
+    top: 600px;
+  }
 }
 </style>
